@@ -9,5 +9,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  
+// <!-- https://www.youtube.com/watch?v=QjaNv7s1gW0  check this video for the project -->
   title = 'e-managment';
 }
