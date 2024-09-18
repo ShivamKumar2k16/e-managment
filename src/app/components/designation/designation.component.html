@@ -1,1 +1,35 @@
-<p>designation works!</p>
+<div class="row m-2">
+  @for (item of designationList; track $index) {
+  <div class="card col-3 m-2">
+    <div class="card-body">
+      <h5 class="card-title text-capitalize">{{ item.designation }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ item.designation }}</h6>
+      <p class="card-text">
+        {{ item.designationId }}
+      </p>
+      <a href="#" class="card-link">Edit</a>
+      <a href="#" class="card-link">View</a>
+    </div>
+  </div>
+  } @if (!designationList||designationList.length==0) {
+  <div class="card col-3" aria-hidden="true">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a
+        href="#"
+        tabindex="-1"
+        class="btn btn-primary disabled placeholder col-6"
+      ></a>
+    </div>
+  </div>
+  }
+</div>
